@@ -69,37 +69,37 @@ Note: Kindly fill .env file with the neccessary information as stated in the .en
 ### How it works
 
 - #### Express Server Setup:
-- - The application sets up an Express server to handle HTTP requests.
+  - The application sets up an Express server to handle HTTP requests.
 
 - #### API Endpoint for PDF Generation:
-- - The server exposes an API endpoint (/generate_pdf) that expects a POST request with JSON payload containing user_email, start_date, and end_date.
+  - The server exposes an API endpoint (/generate_pdf) that expects a POST request with JSON payload containing user_email, start_date, and end_date.
 
 - #### Factories for Service Creation:
-- - Two factories are used (databaseFactory and reportFactory) to create instances of the PDF Generator and Database Service, respectively.
+  - Two factories are used (databaseFactory and reportFactory) to create instances of the PDF Generator and Database Service, respectively.
 
 - #### Database Factory/Service:
-- - The DatabaseService class handles reading transactions from a CSV file based on the provided user email and date range.
+  - The DatabaseService class handles reading transactions from a CSV file based on the provided user email and date range.
 
 - #### Report Factory/Service:
-- - The Report uses the puppereer library to create a PDF document from the fetched transactions.
+  - The Report uses the puppereer library to create a PDF document from the fetched transactions.
 
 - #### Email Factory/Service:
-- - The Report uses the puppereer library to create a PDF document from the fetched transactions.
+  - The Report uses the puppereer library to create a PDF document from the fetched transactions.
 
 - #### HTTP Request Handling:
 - - When a request is received at /generate_pdf, the server:
-- - - Extracts parameters from the request.
-- - - Uses the DatabaseServiceFactory to create a DatabaseService instance.
-- - - Fetches relevant transactions from the database.
-- - - Uses the PdfGeneratorFactory to create a PdfGenerator instance.
-- - - Generates a PDF document using the PDF Generator.
-- - - Sends the generated PDF in the to the email of the recipient .
+    - Extracts parameters from the request.
+    - Uses the DatabaseServiceFactory to create a DatabaseService instance.
+    - Fetches relevant transactions from the database.
+    - Uses the PdfGeneratorFactory to create a PdfGenerator instance.
+    - Generates a PDF document using the PDF Generator.
+    - Sends the generated PDF in the to the email of the recipient .
 
 - #### Error Handling:
-- - If any error occurs during the process, the server responds with a 500 status code and an error message in JSON format.
+  - If any error occurs during the process, the server responds with a 500 status code and an error message in JSON format.
 
 - #### Dependencies:
 - The code relies on external libraries like express for the web server, pdf-lib for PDF generation, and csv-parser for parsing CSV files.
 
 - #### File Organization:
-- - Code is organized into separate files for better readability and maintainability.
+  - Code is organized into separate files for better readability and maintainability.
