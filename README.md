@@ -63,9 +63,9 @@ Note: Kindly fill .env file with the neccessary information as stated in the .en
 
 ### How it works
 
-- # Express Server Setup:
+- #### Express Server Setup:
 - - The application sets up an Express server to handle HTTP requests.
 
-- # API Endpoint for PDF Generation:
+- #### API Endpoint for PDF Generation:
 
 
