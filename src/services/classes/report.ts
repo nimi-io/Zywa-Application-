@@ -11,6 +11,7 @@ import fs from "fs";
 import { generatePdfTemplate } from "../../template/generatepdfEmail";
 import Pdf from "./Abstract/pdf";
 import EmailSender from "./Abstract/email";
+import { EmailFactory, databaseFactory } from "../factories";
 
 class Report {
   db: AbstractRepository;
@@ -18,8 +19,8 @@ class Report {
   PDF: Pdf;
 
   constructor() {
-    this.db = new AbstractRepository();
-    this.EmailSender = new EmailSender();
+    this.db = databaseFactory(); //new AbstractRepository();
+    this.EmailSender = EmailFactory();
     this.PDF = new Pdf();
   }
 
@@ -71,7 +72,7 @@ class Report {
         "TRANSACTION PDF REPORT",
         generatePdfTemplate()
       );
-      
+
       return ResultFunction(
         true,
         enums.SUCCESS,
