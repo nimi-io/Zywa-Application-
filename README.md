@@ -87,7 +87,7 @@ Note: Kindly fill .env file with the neccessary information as stated in the .en
   - The Report uses the puppereer library to create a PDF document from the fetched transactions.
 
 - #### HTTP Request Handling:
-- - When a request is received at /generate_pdf, the server:
+  - When a request is received at /generate_pdf, the server:
     - Extracts parameters from the request.
     - Uses the DatabaseServiceFactory to create a DatabaseService instance.
     - Fetches relevant transactions from the database.
@@ -99,7 +99,26 @@ Note: Kindly fill .env file with the neccessary information as stated in the .en
   - If any error occurs during the process, the server responds with a 500 status code and an error message in JSON format.
 
 - #### Dependencies:
-- The code relies on external libraries like express for the web server, pdf-lib for PDF generation, and csv-parser for parsing CSV files.
+  - The code relies on external libraries like express for the web server, pdf-lib for PDF generation, and csv-parser for parsing CSV files.
 
 - #### File Organization:
   - Code is organized into separate files for better readability and maintainability.
+
+
+
+
+- ###  How would I go about adding authorization and authentication to this process?
+
+  - #### Authentication:
+    - Use a Token-Based Approach
+    - Verify Token on Requests
+  - #### Authorization
+    - Role-Based Access Control
+    - Store User Roles  
+    - Secure Routes Based on Roles
+
+  - #### Miscellaneous
+    - Rate Limiting
+    - Audit Trails
+
+ 
