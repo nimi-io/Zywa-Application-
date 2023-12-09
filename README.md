@@ -3,15 +3,19 @@
 Your README file is normally the first entry point to your code. It should tell people why they should use your module, how they can install it, and how they can use it. Standardizing how you write your README makes creating and maintaining your READMEs easier. Great documentation takes work!
 
 <!-- This repository contains: -->
-## Features
+## Features and Description
 
 - A basic API that accepts a period of time (two dates) and the user's email address.
 - A database service that collects the relevant transactions
 - A PDF generation service that takes in the above data and generates a PDF of the transaction list
 - An email service that sends the above PDF to the user's email address as an attachment
 
- Note:  service is written in NodeJs-Typescript. all parts of the system are in a single server.
+Langusge: Nodejs-Typescript
+Architecture: Monolithic(single service/server)
+Design Pattern:  Factory Method
 
+
+I opted for this language primarily due to my comfort and experience with it. Despite the application not being particularly complex, the familiarity with the language allowed me to expedite the development process within the given time constraints.
 
 ### Prerequisites
 
@@ -54,3 +58,5 @@ Note: Kindly fill .env file with the neccessary information as stated in the .en
     "startDate": "2023-02-15T00:00:00.000Z",
     "endDate": "2023-09-03T00:00:00.000Z"
   }
+
+  ### Description
