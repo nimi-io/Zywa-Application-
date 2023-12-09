@@ -60,3 +60,8 @@ Note: Kindly fill .env file with the neccessary information as stated in the .en
   }
 
   ### Description
+
+### How it works
+
+- Express Server Setup:
+- - The application sets up an Express server to handle HTTP requests.
