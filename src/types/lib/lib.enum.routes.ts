@@ -1,0 +1,48 @@
+export default {
+  GENERATE_PDF_REPORT_CONTROLLER:
+    "::::::::::: ReportController::generatePdfReport",
+
+  MONGO_DB_CONNRCTION_ERROR: "::::::::::: MongoDB connection error",
+  MONGO_DB_CONNECTION_SUCCESS: "::::::::::: MongoDB connection success",
+  MONGO_DB_CONNECTION_CLOSED: "::::::::::: MongoDB connection closed",
+  SIGNUP_CONTROLLER: "::::::::::: AuthController::signup",
+  LOGIN_CONTROLLER: "::::::::::: AuthController::login",
+  LOGOUT_CONTROLLER: "::::::::::: AuthController::logout",
+  REFRESH_TOKEN_CONTROLLER: "::::::::::: AuthController::refreshToken",
+  GET_USER_CONTROLLER: "::::::::::: AuthController::getUser",
+  GET_USERS_CONTROLLER: "::::::::::: AuthController::getUsers",
+  GET_USER_BY_ID_CONTROLLER: "::::::::::: AuthController::getUserById",
+  UPDATE_USER_CONTROLLER: "::::::::::: AuthController::updateUser",
+  VERIFY_TOKEN_MIDDLEWARE: "::::::::::: VerifyTokenMiddleware",
+  DELETE_USER_CONTROLLER: "::::::::::: AuthController::deleteUser",
+  NOT_IMPLEMENTED_CONTROLLER: "::::::::::: Controller not implemented",
+  GENERATE_TOKEN_CONTROLLER: "::::::::::: AuthController::generateToken",
+  VERIFY_TOKEN_CONTROLLER: "::::::::::: AuthController::verifyToken",
+  VERIFY_SOCKET_TOKEN_CONTROLLER:
+    "::::::::::: AuthController::verifySocketToken",
+  RESET_PASSWORD_CONTROLLER: "::::::::::: AuthController::resetPassword",
+  IS_ADMIN_MIDDLEWARE: "::::::::::: IsAdminMiddleware",
+  IS_INVESTOR_MIDDLEWARE: "::::::::::: IsInvestorMiddleware",
+  IS_FOUNDER_MIDDLEWARE: "::::::::::: IsFounderMiddleware",
+  GET_MY_PROFILE_CONTROLLER: "::::::::::: AuthController::getMyProfile",
+  GET_ALL_USERS_CONTROLLER: "::::::::::: AuthController::getAllUsers",
+  UPDATE_MY_PROFILE_CONTROLLER: "::::::::::: AuthController::updateMyProfile",
+  CREATE_COMPANY_CONTROLLER: "::::::::::: CompanyController::createCompany",
+  UPDATE_COMPANY_CONTROLLER: "::::::::::: CompanyController::updateCompany",
+  ADD_CO_FOUNDER_CONTROLLER: "::::::::::: CompanyController::addCoFounder",
+  ADD_INVESTORS_CONTROLLER: "::::::::::: CompanyController::addInvestors",
+  GET_COMPANY_BY_ID_CONTROLLER: "::::::::::: CompanyController::getCompanyById",
+  CREATE_CHAT_CONTROLLER: "::::::::::: ChatController::createChat",
+  SAVE_CHAT_HISTORY: "::::::::::: ChatController::saveChatHistory",
+  GET_CHAT_HISTORY: "::::::::::: ChatController::getChatHistory",
+  GET_CHAT_CONTROLLER: "::::::::::: ChatController::getChat",
+  PRIVATE_MESSAGE_SOCKET_CONTROLLER:
+    "::::::::::: socketController::PrivateMessage",
+
+  READ_CHAT_HISTORY: "::::::::::: ChatController::readChatHistory",
+  GET_CHAT_HISTORY_CONTROLLER: "::::::::::: ChatController::getChatHistory",
+  VERIFY_EMAIL_CONTROLLER: "::::::::::: AuthController::verifyEmail",
+  BOARDFOLIO_WEBSITE: " www.Boadfolio.com",
+  RESEND_VERIFICATION_EMAIL_CONTROLLER:
+    "::::::::::: AuthController::resendVerificationEmail",
+};
